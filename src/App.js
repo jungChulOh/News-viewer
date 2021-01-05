@@ -1,9 +1,13 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import NewsPage from './pages/NewsPage';
 
 const App = () => {
-  return <Route path="/:category?" component={NewsPage} />;
+  return (
+    <Router>
+      <Route path="/:category?" component={NewsPage} />;
+    </Router>
+  );
 };
 
 export default App;
