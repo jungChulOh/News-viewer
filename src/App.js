@@ -5,7 +5,7 @@ import NewsPage from './pages/NewsPage';
 const App = () => {
   return (
     <Router>
-      <Route path="/:category?" component={NewsPage} />;
+      <Route path="/:category?" component={NewsPage} />
     </Router>
   );
 };
